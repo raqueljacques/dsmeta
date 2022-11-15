@@ -5,14 +5,28 @@ padding: 30px 10px;
 }
 
 .dsmeta-sales-title {
-color: #676fff;
+color: #fff;
 font-size: 24px;
 margin-bottom: 20px;
+}
+
+.dsmeta-form-control-container-date {
+    display: flex;
 }
 
 .dsmeta-form-control-container {
 margin-bottom: 16px;
 max-width: 300px;
+display: flex;
+align-items: center;
+}
+
+.dsmeta-form-control-container:first-child {
+    margin-right: 10px;
+}
+
+.dsmeta-form-control-container p {
+    margin-right: 10px;
 }
 
 .dsmeta-form-control {
@@ -93,5 +107,11 @@ background-color: #242c3b;
 @media (min-width: 992px) {
     .show992 {
         display: table-cell;
+    }
+}
+
+@media (max-width: 393px) {
+    .dsmeta-form-control-container p {
+        display: none;
     }
 }
